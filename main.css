@@ -3,11 +3,7 @@ body {
     background: rgb(247, 244, 244);
     color: #333333;
     margin-top: 5rem;
-    /* background-image: url('https://s3.amazonaws.com/jnswire/jns-media/c6/04/645143/workday_logo.jpg');
     height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
   }
   
   h1, h2, h3, h4, h5, h6 {
