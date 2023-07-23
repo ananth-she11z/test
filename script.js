@@ -2,10 +2,10 @@ fetch("data.json")
 .then(function(response){
   return response.json();
 })
-.then(function(data){
+.then(function(allData){
   let placeholder = document.querySelector("#data-output");
   let out = "";
-  for(let data of data){
+  for(let data of allData){
       out += `
         <tr>
           <td>${data.name}</td>
