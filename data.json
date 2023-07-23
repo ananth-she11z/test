@@ -1,1 +1,10 @@
-
+{
+  "name": "Ananth",
+  "age": 35,
+  "country": "India"
+},
+{
+  "name": "Infinity",
+  "age": 35,
+  "country": "New Zealand"
+}
