@@ -18,18 +18,18 @@
     <header class="site-header">
         <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
           <div class="container">
-            <a class="navbar-brand mr-4" href=""><b>Workday's Invest Smartly</b></a>
+            <a class="navbar-brand mr-4" href=""><b>Chase</b></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarToggle">
               <div class="navbar-nav mr-auto">
                 <!-- <a class="nav-item nav-link" href="/">Home</a> -->
-                  <a class="nav-item nav-link" href="">Request</a>
-                  <a class="nav-item nav-link" href="/"> | </a>
-                  <a class="nav-item nav-link" href="">Prioritization</a>
-                  <a class="nav-item nav-link" href="/"> | </a>
-                  <a class="nav-item nav-link" href="">Approvals</a>
+<!--                   <a class="nav-item nav-link" href="">Request</a> -->
+<!--                   <a class="nav-item nav-link" href="/"> | </a> -->
+<!--                   <a class="nav-item nav-link" href="">Prioritization</a> -->
+<!--                   <a class="nav-item nav-link" href="/"> | </a> -->
+<!--                   <a class="nav-item nav-link" href="">Approvals</a> -->
               </div>
               <!-- Navbar Right Side -->
               
@@ -44,6 +44,29 @@
                 <div class="alert alert-{{ message.tags }}">
                 </div>
           </div>
+            <article class="media content-section">
+            <div class="media-body">
+            <div class="article-metadata">
+                <a class="mr-2" href="#">{{ data.requester }}</a>
+                <small class="text-muted">{{ data.requestDate | date:"d F Y H:i" }}</small>
+            </div>
+            <h4><a class="article-title" href="#">{{ data.projectName }}</a></h4><hr>       
+            <small class="text-muted"><b>Sup Org:</b> {{ data.supOrg }}</small><br>
+            <small class="text-muted"><b>Requesting Sub-Org:</b> {{ data.requestingSubOrg }}</small><br><hr>
+            <small class="text-muted"><b>Driver:</b> {{ data.driver }}</small><br>
+            <small class="text-muted"><b>SGI Alignment:</b> {{ data.sgi }}</small><br>
+            <small class="text-muted"><b>ES&T Strategic Imperative:</b> {{ data.est }}</small><br>
+            <small class="text-muted"><b>New or Old:</b> {{ data.existing }}</small><br>
+            <small class="text-muted"><b>Approx Headcount:</b> {{ data.headcount }}</small><br><hr>
+            <small class="text-muted"><b>Software Estimated:</b> ${{ data.softwareEstimated }}</small><br>
+            <small class="text-muted"><b>Pro Service Estimated:</b> ${{ data.proServiceEstimated }}</small><br>
+            <small class="text-muted"><b>FY Investment:</b> ${{ data.fyInvestment }}</small><br><hr>
+            <small class="text-muted"><b>Open Issue:</b> {{ data.OpenIssue }}</small><br>
+            <small class="text-muted"><b>Any Mega Programs:</b> {{ data.AnyMegaPrograms }}</small><br>
+            <small class="text-muted"><b>FedRAMP Impacted:</b> {{ data.FedRAMPImpacted }}</small><hr>            
+            <small class="text-muted">{{ data.description }}</small>
+            </div>
+        </article>
             <div class="col-md-4">
               <div class="content-section">
                 <h5>Calculation Ranges</h5>
